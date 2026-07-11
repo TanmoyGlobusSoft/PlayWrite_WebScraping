@@ -1,0 +1,413 @@
+SQLite with Python - Complete Learning Roadmap
+Learning Objective
+
+By the end of this course, you'll be able to:
+
+Understand what SQLite is.
+Create databases from Python.
+Create tables.
+Insert data.
+Read data.
+Update data.
+Delete data.
+Use parameterized queries safely.
+Handle transactions.
+Manage connections properly.
+Design schemas for scraping projects.
+Store thousands of scraped products efficiently.
+Answer SQLite interview questions.
+
+
+
+Module 1 — Database Fundamentals
+
+We'll start with the basics:
+
+What is a database?
+What is SQLite?
+How SQLite differs from MySQL and PostgreSQL.
+Why SQLite is ideal for small and medium projects.
+When not to use SQLite.
+Database file structure (.db file).
+
+
+
+
+Module 2 — Python's sqlite3 Module
+
+You'll learn:
+
+What sqlite3 is.
+Importing the module.
+Creating a database.
+Opening an existing database.
+Creating a cursor.
+Executing SQL statements.
+Closing the connection properly.
+
+Example topics:
+
+import sqlite3
+
+conn = sqlite3.connect("amazon.db")
+
+cursor = conn.cursor()
+
+You'll understand why each line exists, not just what it does.
+
+
+
+
+
+Module 3 — Database Connections
+
+We'll cover:
+
+What a connection represents.
+How SQLite opens a database file.
+What happens if the file doesn't exist.
+Connection lifetime.
+When to open and close connections.
+Context managers (with sqlite3.connect(...)).
+
+
+
+
+Module 4 — Cursor
+
+One of the most misunderstood concepts.
+
+You'll learn:
+
+What a cursor is.
+Why we need it.
+Cursor lifecycle.
+Multiple cursors.
+How SQL is executed through the cursor.
+
+You'll understand the relationship:
+
+Python
+   │
+Connection
+   │
+Cursor
+   │
+SQLite Database
+
+
+
+
+Module 5 — Creating Tables
+
+You'll learn:
+
+CREATE TABLE
+IF NOT EXISTS
+Data types
+Constraints
+Primary keys
+Unique constraints
+Default values
+
+Example project table:
+
+Products
+
+Product_ID
+ASIN
+Name
+Brand
+Price
+Rating
+Reviews
+Image_URL
+Product_URL
+Created_At
+
+We'll also discuss which fields should be indexed for faster searches.
+
+
+
+
+
+Module 6 — SQLite Data Types
+
+Unlike some databases, SQLite has a flexible type system.
+
+We'll cover:
+
+INTEGER
+REAL
+TEXT
+BLOB
+NULL
+
+We'll also discuss type affinity and what it means in practice.
+
+
+
+
+
+Module 7 — Inserting Data
+
+Topics include:
+
+Single insert.
+Multiple inserts.
+executemany().
+Using dictionaries or tuples.
+Handling optional (None) values.
+
+We'll compare:
+
+cursor.execute(...)
+
+vs.
+
+cursor.executemany(...)
+
+
+
+
+Module 8 — Parameterized Queries (Very Important)
+
+You'll learn why this is correct:
+
+cursor.execute(
+    "INSERT INTO Products (Name, Price) VALUES (?, ?)",
+    (name, price)
+)
+
+and why building SQL strings with user input is unsafe.
+
+Even if your scraper isn't taking user input today, parameterized queries are a best practice you'll use throughout your career.
+
+
+
+
+
+Module 9 — Reading Data
+
+You'll learn:
+
+fetchone()
+fetchmany()
+fetchall()
+Iterating over results.
+Accessing rows.
+Returning rows as dictionaries using sqlite3.Row.
+
+
+
+
+Module 10 — Updating Data
+
+Topics include:
+
+UPDATE
+Conditional updates.
+Updating prices.
+Updating ratings.
+Refreshing scraped information.
+
+Example scenario:
+
+Amazon changes the price tomorrow. How do you update only that product?
+
+
+
+
+
+Module 11 — Deleting Data
+
+You'll learn:
+
+DELETE
+Conditional deletes.
+Deleting old products.
+Deleting duplicates.
+
+
+
+
+Module 12 — Transactions
+
+One of the most important concepts.
+
+You'll understand:
+
+What a transaction is.
+commit()
+rollback()
+Why changes aren't saved immediately.
+Atomicity.
+
+Example:
+
+Insert Product
+↓
+
+Insert Images
+↓
+
+Insert Specifications
+↓
+
+Commit
+
+If something fails before the commit, you can roll back the changes to keep the database consistent.
+
+
+
+
+
+Module 13 — Exception Handling
+
+You'll learn how to handle:
+
+Database errors.
+Missing tables.
+Constraint violations.
+Locked databases.
+
+Using try/except appropriately.
+
+
+
+
+
+Module 14 — Database Design for Scraping
+
+Instead of storing everything in one huge table, we'll discuss normalization.
+
+For example:
+
+Products
+--------
+ASIN
+Name
+Brand
+Price
+
+Images
+------
+ASIN
+Image_URL
+
+Specifications
+--------------
+ASIN
+Specification_Name
+Specification_Value
+
+We'll compare this design to storing everything as a single JSON string and discuss the trade-offs.
+
+
+
+
+
+Module 15 — Using SQLite in Your Amazon Scraper
+
+We'll integrate it into your workflow:
+
+Search Product
+      │
+      ▼
+Extract Product
+      │
+      ▼
+Clean Data
+      │
+      ▼
+Insert Into SQLite
+      │
+      ▼
+Next Product
+
+This will replace printing data to the console with persistent storage.
+
+
+
+
+
+Module 16 — Performance
+
+You'll learn:
+
+Batch inserts with executemany().
+Transactions for bulk operations.
+Creating indexes.
+Query optimization.
+Avoiding unnecessary commits.
+
+These techniques become important when scraping hundreds or thousands of products.
+
+
+
+
+
+Module 17 — Advanced SQLite
+
+We'll cover:
+
+Views.
+Triggers.
+Foreign keys.
+Composite keys.
+ON CONFLICT.
+UPSERT.
+Temporary tables.
+Pragmas (e.g., enabling foreign key support).
+
+Not all of these are necessary for your current project, but they're useful to know.
+
+
+
+
+
+Module 18 — Best Practices
+
+Topics include:
+
+Separating database code from scraping code.
+Keeping SQL organized.
+Using helper functions or classes.
+Avoiding duplicated SQL.
+Proper resource cleanup.
+Logging database operations.
+
+
+
+
+Module 19 — Mini Projects
+
+We'll build progressively:
+
+Student Database.
+Employee Database.
+Library Management.
+Product Inventory.
+Amazon Scraper Database (your project).
+
+Each project introduces new concepts without becoming overwhelming.
+
+
+
+
+
+Module 20 — Interview Preparation
+
+You'll be ready to answer questions such as:
+
+What is SQLite?
+How is SQLite different from MySQL?
+What is a cursor?
+What is a transaction?
+Why is commit() necessary?
+What happens if you forget to call commit()?
+What is executemany()?
+What are parameterized queries?
+How do you prevent SQL injection?
+What is an index?
+When should you use SQLite instead of PostgreSQL?

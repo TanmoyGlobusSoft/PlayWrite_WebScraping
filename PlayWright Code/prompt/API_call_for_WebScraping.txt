@@ -1,0 +1,455 @@
+The course I recommend
+
+
+
+
+Module 1 — What is an API?
+
+You'll learn:
+
+API
+Endpoint
+Client
+Server
+Request
+Response
+
+
+
+
+
+Module 2 — HTTP Basics
+
+You'll learn:
+
+GET
+POST
+PUT
+PATCH
+DELETE
+
+Status codes:
+
+200
+201
+301
+302
+400
+401
+403
+404
+429
+500
+
+
+
+
+
+Module 3 — Understanding Requests
+
+Example:
+
+GET
+
+https://example.com/products?category=laptop&page=2
+
+We'll break down:
+
+https
+
+Protocol
+
+example.com
+
+Host
+
+/products
+
+Endpoint
+
+category=laptop
+
+Query Parameter
+
+page=2
+
+Another Query Parameter
+
+
+
+
+
+
+Module 4 — Headers
+
+You'll learn:
+
+User-Agent
+
+Accept
+
+Authorization
+
+Content-Type
+
+Cookie
+
+Origin
+
+Referer
+
+What each one does.
+
+Why servers need them.
+
+
+
+
+
+
+Module 5 — JSON
+
+Since APIs mostly return JSON, you'll learn:
+
+{
+    "name":"Laptop",
+    "price":59999
+}
+
+Nested JSON
+
+Arrays
+
+Objects
+
+Accessing values in Python
+
+
+
+
+
+
+Module 6 — Chrome DevTools
+
+Exactly what you're already looking at.
+
+You'll learn:
+
+Network Tab
+
+↓
+
+XHR
+
+↓
+
+Fetch
+
+↓
+
+Headers
+
+↓
+
+Payload
+
+↓
+
+Response
+
+↓
+
+Preview
+
+↓
+
+Timing
+
+↓
+
+Copy as cURL
+
+This is where reverse engineering starts.
+
+
+
+
+
+
+Module 7 — Finding Hidden APIs
+
+You'll learn how to inspect websites and identify which requests actually return useful data.
+
+You'll distinguish:
+
+❌ JavaScript
+
+❌ CSS
+
+❌ Images
+
+❌ Fonts
+
+✅ JSON APIs
+
+
+
+
+
+
+Module 8 — Python requests
+
+This is where you'll start writing code like:
+
+import requests
+
+response = requests.get(url)
+
+print(response.json())
+
+We'll explain every line.
+
+
+
+
+
+
+Module 9 — Authentication
+
+You'll learn:
+
+API Keys
+
+Bearer Tokens
+
+Cookies
+
+Session IDs
+
+JWT Tokens
+
+OAuth (basic understanding)
+
+
+
+
+
+
+Module 10 — POST Requests
+
+Many websites search using POST requests.
+
+You'll learn:
+
+requests.post(...)
+
+JSON body
+
+Form data
+
+Payloads
+
+
+
+
+
+
+Module 11 — Pagination
+
+Just like Playwright.
+
+Instead of clicking:
+
+Next
+
+You'll request:
+
+page=2
+
+Much faster.
+
+
+
+
+
+
+Module 12 — Error Handling
+
+Handle:
+
+404
+
+429
+
+500
+
+Timeout
+
+Connection Errors
+
+
+
+
+
+Module 13 — Sessions
+
+Using
+
+requests.Session()
+
+Reuse cookies
+
+Reuse headers
+
+Reuse connections
+
+Improve performance
+
+Module 14 — Saving Data
+
+Exactly like your scraper.
+
+Store:
+
+Products
+
+↓
+
+SQLite
+
+
+
+
+
+
+Module 15 — Integrating Playwright + API
+
+Sometimes you need both.
+
+Example:
+
+Playwright
+
+↓
+
+Login
+
+↓
+
+Extract Cookies
+
+↓
+
+Python Requests
+
+↓
+
+API Calls
+
+↓
+
+SQLite
+
+This is a common workflow when APIs require an authenticated session.
+
+Practical Project Progression
+
+We'll work through increasingly realistic examples:
+
+Project 1
+
+Use a public API.
+
+No authentication.
+
+Just GET requests.
+
+Project 2
+
+API with pagination.
+
+Project 3
+
+API with headers.
+
+Project 4
+
+API with POST requests.
+
+Project 5
+
+API requiring cookies.
+
+Project 6
+
+Reverse engineer a real website.
+
+Project 7
+
+Replace HTML scraping with API requests (where appropriate).
+
+Project 8
+
+Store everything in SQLite.
+
+How this fits into your scraping journey
+
+Right now, your skill set looks like this:
+
+Website
+
+↓
+
+Playwright
+
+↓
+
+Locate Elements
+
+↓
+
+Extract HTML
+
+↓
+
+SQLite
+
+After learning APIs, you'll have another option:
+
+Website
+
+↓
+
+Network Tab
+
+↓
+
+Find API
+
+↓
+
+Python Requests
+
+↓
+
+JSON
+
+↓
+
+SQLite
+
+This second approach is often significantly faster because you're requesting structured data directly instead of rendering and parsing a web page.
+
+Looking at your screenshot
+
+You're already at the right place—the Network tab. The next step isn't to inspect every request. Instead, you'll learn to filter and identify the requests that actually contain data.
+
+Typically, you'll:
+
+Open Network.
+Select Fetch/XHR.
+Perform an action on the website (like searching for "Laptop").
+Look for a request whose Response contains JSON with product information.
+Reproduce that request in Python using requests.
+
+That process—discover → inspect → reproduce—is the core skill behind API-based data extraction.
