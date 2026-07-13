@@ -1,0 +1,154 @@
+
+Request #148
+Method         : POST
+URL            : https://www.amazon.in/vap/ew/subcomponent/vseplayer
+Resource Type  : xhr
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/
+----------------------------------------------------------
+
+Request #149
+Method         : POST
+URL            : https://www.amazon.in/vap/ew/componentbuilder
+Resource Type  : xhr
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/
+----------------------------------------------------------
+
+Request #272
+Method         : POST
+URL            : https://unagi.amazon.in/1/events/com.amazon.csm.nexusclient.prod
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #274
+Method         : POST
+URL            : https://unagi.amazon.in/1/events/com.amazon.csm.csa.prod
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #277
+Method         : POST
+URL            : https://unagi.amazon.in/1/events/com.amazon.csm.csa.prod
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #278
+Method         : POST
+URL            : https://unagi.amazon.in/1/events/com.amazon.csm.csa.prod
+Resource Type  : xhr
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #279
+Method         : POST
+URL            : https://unagi.amazon.in/1/events/com.amazon.csm.customsg.prod
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #285
+Method         : POST
+URL            : https://www.amazon.in/dram/eu-south-2/renderLazyLoaded
+Resource Type  : xhr
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #291
+Method         : POST
+URL            : https://www.amazon.in/acp/eu-south-2/cr-media-carousel/cr-media-carousel-a3646899-a54b-4716-a61a-662f85d1f976-1782987748925/getTreatmentNoTrigger?page-type=Detail&stamp=1783875030637
+Resource Type  : xhr
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #335
+Method         : POST
+URL            : https://unagi-eu.amazon.com/1/events/com.amazon.eel.SponsoredProductsEventTracking.prod.ZAZ
+Resource Type  : xhr
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #420
+Method         : POST
+URL            : https://unagi.amazon.in/1/events/com.amazon.csm.nexusclient.prod
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #440
+Method         : POST
+URL            : https://unagi.amazon.in/1/events/com.amazon.csm.csa.prod
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #441
+Method         : POST
+URL            : https://unagi.amazon.in/1/events/com.amazon.csm.csa.prod
+Resource Type  : xhr
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #451
+Method         : POST
+URL            : https://unagi-na.amazon.com/1/events/com.amazon.Vowels.ClientMetrics
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #453
+Method         : POST
+URL            : https://unagi-na.amazon.com/1/events/com.amazon.Vowels.ClientMetrics
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #454
+Method         : POST
+URL            : https://unagi-na.amazon.com/1/events/com.amazon.Vowels.ClientMetrics
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #455
+Method         : POST
+URL            : https://unagi-na.amazon.com/1/events/com.amazon.Vowels.ClientMetrics
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #456
+Method         : POST
+URL            : https://unagi-na.amazon.com/1/events/com.amazon.Vowels.ClientMetrics
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #457
+Method         : POST
+URL            : https://unagi-na.amazon.com/1/events/com.amazon.Vowels.PageWeightMetrics
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #458
+Method         : POST
+URL            : https://unagi.amazon.in/1/events/com.amazon.csm.csa.prod
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #459
+Method         : POST
+URL            : https://unagi.amazon.in/1/events/com.amazon.csm.csa.prod
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
+
+Request #460
+Method         : POST
+URL            : https://unagi.amazon.in/1/events/com.amazon.csm.csa.prod
+Resource Type  : ping
+Frame URL      : https://www.amazon.in/Lenovo-IdeaPad-Next-Gen-Keyboard-83UR009QIN/dp/B0H3PV7418/?th=1
+----------------------------------------------------------
