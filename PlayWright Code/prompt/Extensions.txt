@@ -1,0 +1,383 @@
+📚 Course: Browser Extensions for Web Scraping & Chrome Extension Development
+Part 1 — Browser Extensions for Web Scraping (Using Existing Extensions)
+
+
+
+
+
+Module 1 — Introduction to Browser Extensions
+
+You'll learn:
+
+What is a browser extension?
+How extensions work internally
+Extension lifecycle
+Chrome vs Edge vs Firefox extensions
+Packed vs Unpacked extensions
+Where extensions are stored
+Permissions overview
+Extension architecture
+
+Practical:
+
+Explore an installed extension.
+Identify its files and folder structure.
+
+
+
+
+
+
+Module 2 — Installing & Managing Extensions
+
+You'll learn:
+
+Installing from the Chrome Web Store
+Installing unpacked extensions
+Enabling Developer Mode
+Updating extensions
+Removing extensions
+Exporting and backing up extensions
+Managing permissions
+
+Practical:
+
+Install several useful scraping extensions.
+Load an unpacked sample extension.
+
+
+
+
+
+
+Module 3 — Browser Profiles & Playwright Integration
+
+You'll learn:
+
+Browser profiles
+Persistent vs temporary profiles
+How Playwright handles profiles
+Loading extensions in Playwright
+Using launch_persistent_context()
+Managing multiple profiles
+
+Practical:
+
+Launch Playwright with a persistent profile.
+Load an unpacked extension.
+
+
+
+
+
+
+Module 4 — Chrome DevTools & Extensions
+
+You'll learn:
+
+Elements panel
+Network panel
+Application panel
+Sources panel
+How extensions complement DevTools
+Finding hidden APIs
+Cookies and local storage
+
+Practical:
+
+Inspect a real website.
+Compare DevTools with extension output.
+
+
+
+
+
+
+Module 5 — Cookie Management Extensions
+
+Extensions:
+
+Cookie-Editor
+EditThisCookie
+
+You'll learn:
+
+Cookie anatomy
+Export/import cookies
+Session persistence
+Cookie security attributes
+Loading cookies into Playwright
+
+Project:
+
+Log in manually, export cookies, and reuse them in Playwright.
+
+
+
+
+
+
+Module 6 — Network & API Inspection Extensions
+
+Extensions:
+
+Requestly
+ModHeader
+JSON Viewer
+
+You'll learn:
+
+HTTP methods
+Request/response headers
+JSON payloads
+API discovery
+Response analysis
+
+Project:
+
+Discover a hidden API and consume it using Python.
+
+
+
+
+
+
+Module 7 — Technology Detection Extensions
+
+Extensions:
+
+Wappalyzer
+
+You'll learn:
+
+Detecting frontend frameworks
+Backend technologies
+CDNs
+Analytics tools
+Choosing the right scraping strategy
+
+Project:
+
+Analyze several websites and decide whether to scrape HTML or APIs.
+
+
+
+
+
+
+Module 8 — Selector & DOM Helper Extensions
+
+Extensions:
+
+XPath Helper
+Selector Gadget
+
+You'll learn:
+
+CSS selectors
+XPath
+Testing selectors
+Playwright locator strategies
+
+Project:
+
+Generate selectors and convert them into Playwright locators.
+
+
+
+
+
+
+Module 9 — Productivity Extensions
+
+You'll learn:
+
+Header editors
+Proxy switchers
+User-Agent switchers
+Session managers
+Download helpers
+
+Project:
+
+Configure a browser profile for debugging and testing.
+
+
+
+
+
+
+Module 10 — Real-World Investigation Workflow
+
+Projects:
+
+Amazon
+Reddit
+Another public website
+
+You'll learn:
+
+Investigating a website
+Finding APIs
+Cookies
+Headers
+Storage
+Network requests
+
+Goal:
+Develop a complete investigation workflow before writing a scraper.
+
+Part 2 — Chrome Extension Development (Building Your Own)
+Module 11 — Introduction to Chrome Extension Development
+
+You'll learn:
+
+MV3 architecture
+Folder structure
+manifest.json
+Permissions
+Extension lifecycle
+
+Project:
+
+Build your first "Hello Extension."
+Module 12 — Manifest.json Deep Dive
+
+You'll learn:
+
+Every important field
+Permissions
+Icons
+Commands
+Action
+Content scripts
+Background service workers
+
+Project:
+
+Create a complete manifest from scratch.
+Module 13 — Popup UI Development
+
+You'll learn:
+
+HTML
+CSS
+JavaScript
+Popup lifecycle
+User interaction
+
+Project:
+
+Build an interactive popup.
+Module 14 — Background Service Workers
+
+You'll learn:
+
+Background execution
+Event listeners
+Browser events
+Message handling
+
+Project:
+
+Log browser events in the background.
+Module 15 — Content Scripts
+
+You'll learn:
+
+Injecting JavaScript
+Reading the DOM
+Modifying pages
+Extracting data
+
+Project:
+
+Build an extension that extracts product information from the current page.
+Module 16 — Messaging System
+
+You'll learn:
+
+Popup ↔ Background
+Popup ↔ Content
+Background ↔ Content
+
+Project:
+
+Send extracted page data to the popup.
+Module 17 — Chrome Extension APIs
+
+You'll learn:
+
+Tabs API
+Storage API
+Cookies API
+Downloads API
+Runtime API
+Scripting API
+
+Project:
+
+Build small examples using each API.
+Module 18 — Storage & Data Management
+
+You'll learn:
+
+chrome.storage.local
+chrome.storage.sync
+Exporting JSON
+Importing JSON
+
+Project:
+
+Save and restore extension settings.
+Module 19 — Building Scraping Tools
+
+Projects:
+
+Product extractor
+API logger
+Cookie exporter
+Link collector
+Image extractor
+
+Goal:
+Create reusable browser tools for scraping and analysis.
+
+Module 20 — Integrating Extensions with Playwright
+
+You'll learn:
+
+Loading your own extension
+Using Playwright with custom extensions
+Debugging
+Testing extension behavior
+
+Project:
+
+Run Playwright with your own extension and verify they work together.
+Module 21 — Final Professional Projects
+
+Build complete tools such as:
+
+Website Analyzer (detect technologies, APIs, and storage)
+API Inspector (capture and organize network calls)
+DOM Explorer (inspect and export page structure)
+Cookie Manager (view and export cookies)
+Selector Generator (create CSS/XPath and Playwright locators)
+Data Exporter (save extracted data as JSON/CSV)
+Final Outcome
+
+By completing this roadmap, you should be able to:
+
+Use browser extensions confidently
+Install and configure common scraping extensions.
+Analyze websites with DevTools and extensions.
+Discover APIs, cookies, storage, and technologies.
+Incorporate extension-assisted analysis into your Playwright workflow.
+Build your own Chrome extensions
+Develop extensions using Manifest V3.
+Create popups, content scripts, and background service workers.
+Use Chrome Extension APIs effectively.
+Build custom tools that support your scraping and automation tasks.
+
+This roadmap fits naturally after your current learning path of Python → Playwright → SQLite → API scraping, and prepares you for more advanced browser automation and tooling.
